@@ -42,10 +42,8 @@ Laravel 5.5+ will use the auto-discovery function but for Laravel 5.4 and lower,
 Copy the default config file:
 
 ```bash
-php artisan vendor:publish
+php artisan vendor:publish --provider="Emotality\TawkTo\TawkToServiceProvider"
 ```
-
-Choose: `Emotality\TawkTo\TawkToServiceProvider`
 
 Open `.env` and set your API key:
 
