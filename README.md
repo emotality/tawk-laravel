@@ -2,7 +2,13 @@
 
 [tawk.to](https://www.tawk.to) has dozens of [integrations](https://www.tawk.to/knowledgebase/integrations/), but not for Laravel. This is a tawk.to chat widget for Laravel.
 
-![tawk-laravel](https://emotality.com/development/GitHub/tawk-laravel-1.png)
+<p align="center"><img src="https://emotality.com/development/GitHub/tawk-laravel-2.png" height="461"></p>
+
+<p align="center">
+<a href="https://packagist.org/packages/emotality/tawk-laravel"><img src="https://poser.pugx.org/emotality/tawk-laravel/d/total.svg" alt="Total Downloads"></a>
+<a href="https://packagist.org/packages/emotality/tawk-laravel"><img src="https://poser.pugx.org/emotality/tawk-laravel/v/stable.svg" alt="Latest Stable Version"></a>
+<a href="https://packagist.org/packages/emotality/tawk-laravel"><img src="https://poser.pugx.org/emotality/tawk-laravel/license.svg" alt="License"></a>
+</p>
 
 ## Usage
 
