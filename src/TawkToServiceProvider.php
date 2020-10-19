@@ -7,36 +7,22 @@ use Illuminate\Support\ServiceProvider;
 class TawkToServiceProvider extends ServiceProvider
 {
     /**
-     * Bootstrap services.
+     * Bootstrap any application services.
      *
      * @return void
      */
     public function boot()
     {
         $this->publishes([
-            __DIR__ . '/config/tawkto.php' => config_path('tawkto.php')
-        ]);
+            __DIR__ . '/../config/tawkto.php' => config_path('tawkto.php')
+        ], 'config');
     }
 
     /**
-     * Register services.
-     *
-     * @return void
+     * {@inheritDoc}
      */
     public function register()
     {
-        $this->app->singleton(TawkTo::class, function ($app) {
-            return new TawkTo();
-        });
-    }
-
-    /**
-     * Get the services provided by the provider.
-     *
-     * @return array
-     */
-    public function provides()
-    {
-        return [TawkTo::class];
+        //
     }
 }

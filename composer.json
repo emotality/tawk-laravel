@@ -1,16 +1,23 @@
 {
     "name": "emotality/tawk-laravel",
     "description": "A tawk.to chat widget for Laravel.",
-    "keywords": ["tawk.to", "tawkto", "tawk", "chat", "widget", "laravel"],
     "type": "library",
+    "keywords": [
+        "laravel",
+        "tawk.to",
+        "tawkto",
+        "tawk",
+        "chat",
+        "widget"
+    ],
     "license": "MIT",
     "authors": [
         {
             "name": "Jean-Pierre Fourie",
+            "homepage": "https://emotality.com",
             "email": "jp@emotality.com"
         }
     ],
-    "minimum-stability": "dev",
     "require": {
         "php": ">=5.6.0"
     },
@@ -25,8 +32,10 @@
                 "Emotality\\TawkTo\\TawkToServiceProvider"
             ],
             "aliases": {
-                "TawkTo": "Emotality\\TawkTo\\Facades\\TawkTo"
+                "TawkTo": "Emotality\\TawkTo\\TawkTo"
             }
         }
-    }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
