@@ -15,10 +15,10 @@
 3. Add the following line to your `.env` file:
 
 ```
-TAWKTO_KEY="<your_property_id>"
+TAWKTO_LINK="<your_direct_chat_link>"
 ```
 
-*Get your key from the **Property ID** field from [your dashboard](https://dashboard.tawk.to/#/admin)*
+*Get your key from the **Direct Chat Link** field from [your dashboard](https://dashboard.tawk.to/#/admin)*
 
 ---
 
@@ -57,7 +57,7 @@ Or, if you don't want to use a config file, you can set your key directly like t
 
 ```html
         ...
-        {{ TawkTo::widgetCode('your_property_id') }}
+        {{ TawkTo::widgetCode('your_direct_chat_link') }}
     </body>
 </html>
 ```

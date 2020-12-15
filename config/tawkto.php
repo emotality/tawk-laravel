@@ -15,9 +15,6 @@ return [
     | New: TAWKTO_KEY
     |
     */
-    'api_key' => env(
-        'TAWKTO_KEY',
-        env('TAWKTO_API_KEY') // Deprecation purposes only, delete this if this was a fresh installation!
-    ),
+    'link' => env('TAWKTO_LINK'),
 
 ];
