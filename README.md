@@ -12,13 +12,13 @@
 
 1. `composer require emotality/tawk-laravel`
 2. `php artisan vendor:publish --provider="Emotality\TawkTo\TawkToServiceProvider"`
-3. Add the following line to your `.env` file:
+3. Add your chat link to your `.env` file:
 
 ```
-TAWKTO_LINK="<your_direct_chat_link>"
+TAWKTO_LINK="https://tawk.to/chat/{property_key}/{widget_key}"
 ```
 
-*Get your key from the **Direct Chat Link** field from [your dashboard](https://dashboard.tawk.to/#/admin)*
+*Get your link from the **Direct Chat Link** field from [your dashboard](https://dashboard.tawk.to/#/admin/chat-widget)*
 
 ---
 
@@ -48,16 +48,16 @@ Just echo the widget code in your app layout blade inside the body tag:
 
 ```html
         ...
-        {{ TawkTo::widgetCode() }}
+        {{ \TawkTo::widgetCode() }}
     </body>
 </html>
 ```
 
-Or, if you don't want to use a config file, you can set your key directly like this:
+Or, if you don't want to use a config file, you can set your link directly like this:
 
 ```html
         ...
-        {{ TawkTo::widgetCode('your_direct_chat_link') }}
+        {{ \TawkTo::widgetCode('your_direct_chat_link') }}
     </body>
 </html>
 ```
