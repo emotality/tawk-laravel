@@ -8,6 +8,13 @@
 
 <p><img src="https://emotality.com/development/GitHub/tawk-laravel-2.png" height="461"></p>
 
+## Requirements
+
+- PHP 7.0+
+- Laravel 5.5+
+
+*If you don't meet the requirements, feel free to try version 2.0*
+
 ## Installation
 
 1. `composer require emotality/tawk-laravel`
@@ -19,28 +26,6 @@ TAWKTO_LINK="https://tawk.to/chat/{property_key}/{widget_key}"
 ```
 
 *Get your link from the **Direct Chat Link** field from [your dashboard](https://dashboard.tawk.to/#/admin/chat-widget)*
-
----
-
-Laravel 5.5+ will use the auto-discovery function but for Laravel 5.4 and lower, you will need to include the service provider & facade manually in `config/app.php`:
-
-```php
-'providers' => [
-    ...,
-    /*
-     * Package Service Providers...
-     */
-    Emotality\TawkTo\TawkToServiceProvider::class,
-    ...,
-];
-
-...
-
-'aliases' => [
-    ...,
-    'TawkTo' => Emotality\TawkTo\TawkTo::class,
-];
-```
 
 ## Usage
 

@@ -14,7 +14,7 @@ class TawkToServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->publishes([
-            __DIR__ . '/../config/tawkto.php' => config_path('tawkto.php')
+            __DIR__.'/../config/tawkto.php' => config_path('tawkto.php'),
         ], 'config');
     }
 
