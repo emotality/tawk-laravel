@@ -11,6 +11,7 @@
         "widget"
     ],
     "license": "MIT",
+    "homepage": "https://github.com/emotality/tawk-laravel",
     "authors": [
         {
             "name": "Jean-Pierre Fourie",
