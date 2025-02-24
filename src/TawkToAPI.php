@@ -2,18 +2,19 @@
 
 namespace Emotality\TawkTo;
 
+use Illuminate\Support\Facades\Config;
+
 class TawkToAPI
 {
     /**
      * Echo out the tawk.to widget script
      *
-     * @param  string|null  $link
      * @return void|string
      * @throws \Exception
      */
-    public function widgetCode(string $link = null)
+    public function widgetCode(?string $link = null)
     {
-        $link = $link ?? config('tawkto.link');
+        $link = $link ?? Config::get('tawkto.link');
 
         if (empty($link)) {
             throw new \Exception('Your TawkTo "Direct Chat Link" (TAWKTO_LINK) can not be empty.');
@@ -24,11 +25,8 @@ class TawkToAPI
 
     /**
      * Create TawkTo JavaScript code.
-     *
-     * @param  string  $link
-     * @return string
      */
-    private static function script(string $link) : string
+    private static function script(string $link): string
     {
         $embed_link = str_replace('https://tawk.to/chat/', 'https://embed.tawk.to/', $link);
 

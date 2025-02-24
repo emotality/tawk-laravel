@@ -23,6 +23,9 @@
         "php": ">=7.0.0",
         "illuminate/support": ">=5.5.0"
     },
+    "require-dev": {
+        "laravel/pint": "^1.21"
+    },
     "autoload": {
         "psr-4": {
             "Emotality\\TawkTo\\": "src/"
@@ -37,6 +40,9 @@
                 "TawkTo": "Emotality\\TawkTo\\TawkTo"
             }
         }
+    },
+    "config": {
+        "sort-packages": true
     },
     "minimum-stability": "dev",
     "prefer-stable": true
